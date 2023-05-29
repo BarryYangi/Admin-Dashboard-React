@@ -4,7 +4,8 @@ import { Route, Routes } from 'react-router-dom'
 import Login from '../Login'
 import Home from '../Home'
 import Toolbar from '../Toolbar'
-import UserManger from '../UserManger'
+import UserManager from '../UserManger'
+import MenuManager from '../MenuManager'
 
 const App: React.FC = () => {
   return (
@@ -13,7 +14,8 @@ const App: React.FC = () => {
         <Route path="/" element={<Login />} />
         <Route path="home" element={<Home />} >
         <Route index element={<div className=' text-3xl'>Hello</div>} />
-        <Route path="userManger" element={<UserManger />} />
+        <Route path="userManager" element={<UserManager />} />
+        <Route path="menuManager" element={<MenuManager />} />
         </Route>
       </Routes>
       <div className="fixed right-3 top-3">

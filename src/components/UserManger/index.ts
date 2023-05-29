@@ -1,2 +1,2 @@
-export * from './UserManger'
-export { default } from './UserManger'
+export * from './UserManager'
+export { default } from './UserManager'

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserManger: React.FC = () => {
+const UserManager: React.FC = () => {
   return (
     <div className="overflow-x-auto">
   <table className="table-compact table w-full">
@@ -213,4 +213,4 @@ const UserManger: React.FC = () => {
   )
 }
 
-export default UserManger
+export default UserManager

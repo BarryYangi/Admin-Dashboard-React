@@ -6,7 +6,7 @@ const Toolbar: React.FC = () => {
   return (
     <>
       <ThemeChange />
-      <a href='https://github.com/playreact/template' className='btn btn-ghost btn-square'>
+      <a href='https://github.com/BarryYangi/Admin-Dashboard-React' className='btn btn-ghost btn-square'>
         <Github />
       </a>
     </>
