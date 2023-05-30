@@ -7,6 +7,10 @@ import Toolbar from '../Toolbar'
 import UserManager from '../UserManger'
 import MenuManager from '../MenuManager'
 import Dept from '../Dept'
+import Charts from '../Charts'
+import ColumnCharts from '../ColumnCharts'
+import PieCharts from '../PieCharts'
+import RoseCharts from '../RoseChartrs'
 
 const App: React.FC = () => {
   return (
@@ -18,6 +22,10 @@ const App: React.FC = () => {
         <Route path="userManager" element={<UserManager />} />
         <Route path="menuManager" element={<MenuManager />} />
         <Route path="dept" element={<Dept />} />
+        <Route path="charts" element={<Charts />} />
+        <Route path="column" element={<ColumnCharts />} />
+        <Route path="pie" element={<PieCharts />} />
+        <Route path="rose" element={<RoseCharts />} />
         </Route>
       </Routes>
       <div className="fixed right-3 top-3">

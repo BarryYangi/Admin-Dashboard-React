@@ -30,8 +30,10 @@ const Home: React.FC = () => {
                 <MenuItem component={<Link to="dept" />}>公司管理</MenuItem>
               </SubMenu>
               <SubMenu label="数据展示" icon={<Database />}>
-                <MenuItem> Google maps</MenuItem>
-                <MenuItem> Open street maps</MenuItem>
+                <MenuItem component={<Link to="charts" />}>总览</MenuItem>
+                <MenuItem component={<Link to="column" />}>柱状图</MenuItem>
+                <MenuItem component={<Link to="pie" />}>饼图</MenuItem>
+                <MenuItem component={<Link to="rose" />}>玫瑰图</MenuItem>
               </SubMenu>
               <SubMenu label="弹幕墙" icon={<Wallpaper />}>
                 <MenuItem> Dark</MenuItem>
