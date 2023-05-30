@@ -6,6 +6,7 @@ import Home from '../Home'
 import Toolbar from '../Toolbar'
 import UserManager from '../UserManger'
 import MenuManager from '../MenuManager'
+import Dept from '../Dept'
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route index element={<div className=' text-3xl'>Hello</div>} />
         <Route path="userManager" element={<UserManager />} />
         <Route path="menuManager" element={<MenuManager />} />
+        <Route path="dept" element={<Dept />} />
         </Route>
       </Routes>
       <div className="fixed right-3 top-3">

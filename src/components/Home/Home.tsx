@@ -27,7 +27,7 @@ const Home: React.FC = () => {
               <SubMenu defaultOpen label="系统管理" icon={<Fingerprint />}>
                 <MenuItem component={<Link to="userManager" />}>用户管理</MenuItem>
                 <MenuItem component={<Link to="menuManager" />}>菜单管理</MenuItem>
-                <MenuItem>公司管理</MenuItem>
+                <MenuItem component={<Link to="dept" />}>公司管理</MenuItem>
               </SubMenu>
               <SubMenu label="数据展示" icon={<Database />}>
                 <MenuItem> Google maps</MenuItem>
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
           Just React Demo
         </h1> */}
       <main className='flex justify-center'>
-        <div className='relative left-24 h-auto w-3/4'><Outlet /></div>
+        <div className='relative left-24 max-h-screen w-3/4'><Outlet /></div>
       </main>
     </div>
   )
