@@ -1,5 +1,5 @@
 import React from 'react'
-import { Edit, Trash } from 'lucide-react'
+import Action from '../Action'
 
 const Dept: React.FC = () => {
   return (
@@ -24,12 +24,7 @@ const Dept: React.FC = () => {
             <td>Littel, Schaden and Vandervort</td>
             <td>Canada</td>
             <td>12/16/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -39,12 +34,7 @@ const Dept: React.FC = () => {
             <td>Zemlak, Daniel and Leannon</td>
             <td>United States</td>
             <td>12/5/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -54,12 +44,7 @@ const Dept: React.FC = () => {
             <td>Carroll Group</td>
             <td>China</td>
             <td>8/15/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -69,12 +54,7 @@ const Dept: React.FC = () => {
             <td>Rowe-Schoen</td>
             <td>Russia</td>
             <td>3/25/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -84,12 +64,7 @@ const Dept: React.FC = () => {
             <td>Wyman-Ledner</td>
             <td>Brazil</td>
             <td>5/22/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -99,12 +74,7 @@ const Dept: React.FC = () => {
             <td>Wiza, Bins and Emard</td>
             <td>Venezuela</td>
             <td>12/8/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -114,12 +84,7 @@ const Dept: React.FC = () => {
             <td>Schuster-Schimmel</td>
             <td>Philippines</td>
             <td>2/17/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -129,12 +94,7 @@ const Dept: React.FC = () => {
             <td>O'Hara, Welch and Keebler</td>
             <td>Indonesia</td>
             <td>5/23/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -144,12 +104,7 @@ const Dept: React.FC = () => {
             <td>Turner-Kuhlman</td>
             <td>Philippines</td>
             <td>2/21/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -159,12 +114,7 @@ const Dept: React.FC = () => {
             <td>Sauer LLC</td>
             <td>Chad</td>
             <td>6/23/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
           <tr>
@@ -174,12 +124,7 @@ const Dept: React.FC = () => {
             <td>Hilpert Group</td>
             <td>Poland</td>
             <td>7/9/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-              <div className="tooltip mr-4" data-tip="删除">
-                <Trash color='red'></Trash>
-              </div>
+            <td><Action/>
             </td>
           </tr>
 

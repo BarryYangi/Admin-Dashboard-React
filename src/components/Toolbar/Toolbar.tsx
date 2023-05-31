@@ -13,7 +13,7 @@ const Toolbar: React.FC = () => {
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box w-36 p-2 shadow">
           <li><a>设置</a></li>
           <li><a>个人中心</a></li>
-          <li > <Link to="/">退出</Link></li>
+          <li > <Link to="/">注销</Link></li>
         </ul>
       </div>
       <ThemeChange />

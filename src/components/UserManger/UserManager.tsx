@@ -1,9 +1,10 @@
 import React from 'react'
-import { Edit, Repeat2, Trash } from 'lucide-react'
+import { motion } from 'framer-motion'
+import Action from '../Action'
 
 const UserManager: React.FC = () => {
   return (
-    <div className="overflow-x-auto">
+    <motion.div className="overflow-x-auto">
       <table className="table-compact table w-full">
         <thead>
           <tr>
@@ -24,15 +25,7 @@ const UserManager: React.FC = () => {
             <td>Littel, Schaden and Vandervort</td>
             <td>Canada</td>
             <td>12/16/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -41,15 +34,7 @@ const UserManager: React.FC = () => {
             <td>Zemlak, Daniel and Leannon</td>
             <td>United States</td>
             <td>12/5/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -58,15 +43,7 @@ const UserManager: React.FC = () => {
             <td>Carroll Group</td>
             <td>China</td>
             <td>8/15/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -75,15 +52,7 @@ const UserManager: React.FC = () => {
             <td>Rowe-Schoen</td>
             <td>Russia</td>
             <td>3/25/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -92,15 +61,7 @@ const UserManager: React.FC = () => {
             <td>Wyman-Ledner</td>
             <td>Brazil</td>
             <td>5/22/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -109,15 +70,7 @@ const UserManager: React.FC = () => {
             <td>Wiza, Bins and Emard</td>
             <td>Venezuela</td>
             <td>12/8/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -126,15 +79,7 @@ const UserManager: React.FC = () => {
             <td>Schuster-Schimmel</td>
             <td>Philippines</td>
             <td>2/17/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -143,15 +88,7 @@ const UserManager: React.FC = () => {
             <td>O'Hara, Welch and Keebler</td>
             <td>Indonesia</td>
             <td>5/23/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -160,15 +97,7 @@ const UserManager: React.FC = () => {
             <td>Turner-Kuhlman</td>
             <td>Philippines</td>
             <td>2/21/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -177,15 +106,7 @@ const UserManager: React.FC = () => {
             <td>Sauer LLC</td>
             <td>Chad</td>
             <td>6/23/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -194,15 +115,7 @@ const UserManager: React.FC = () => {
             <td>Hilpert Group</td>
             <td>Poland</td>
             <td>7/9/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -211,15 +124,7 @@ const UserManager: React.FC = () => {
             <td>Gutmann Inc</td>
             <td>Indonesia</td>
             <td>2/12/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -228,15 +133,7 @@ const UserManager: React.FC = () => {
             <td>Gaylord, Pacocha and Baumbach</td>
             <td>Poland</td>
             <td>5/31/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -245,15 +142,7 @@ const UserManager: React.FC = () => {
             <td>Deckow-Pouros</td>
             <td>Portugal</td>
             <td>4/27/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -262,15 +151,7 @@ const UserManager: React.FC = () => {
             <td>Schiller, Cole and Hackett</td>
             <td>Sri Lanka</td>
             <td>8/8/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -279,15 +160,7 @@ const UserManager: React.FC = () => {
             <td>Sporer, Sipes and Rogahn</td>
             <td>Poland</td>
             <td>7/30/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -296,15 +169,7 @@ const UserManager: React.FC = () => {
             <td>Reichel, Glover and Hamill</td>
             <td>China</td>
             <td>2/28/2021</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -313,15 +178,7 @@ const UserManager: React.FC = () => {
             <td>Kshlerin, Rogahn and Swaniawski</td>
             <td>Czech Republic</td>
             <td>9/29/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -330,15 +187,7 @@ const UserManager: React.FC = () => {
             <td>Pouros, Ullrich and Windler</td>
             <td>France</td>
             <td>10/27/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div></td>
+            <td><Action/></td>
           </tr>
           <tr>
             <th><input type="checkbox" className="checkbox m-0 h-5 w-5 p-0" /></th>
@@ -347,15 +196,7 @@ const UserManager: React.FC = () => {
             <td>Witting, Kutch and Greenfelder</td>
             <td>Kazakhstan</td>
             <td>6/3/2020</td>
-            <td><div className="tooltip mr-4" data-tip="编辑">
-              <Edit></Edit>
-            </div>
-            <div className="tooltip mr-4" data-tip="删除">
-              <Trash color='red'></Trash>
-            </div>
-            <div className="tooltip mr-4" data-tip="重置密码">
-            <Repeat2></Repeat2>
-            </div>
+            <td><Action/>
             </td>
           </tr>
         </tbody>
@@ -371,7 +212,7 @@ const UserManager: React.FC = () => {
           </tr>
         </tfoot>
       </table>
-    </div>
+    </motion.div>
   )
 }
 
