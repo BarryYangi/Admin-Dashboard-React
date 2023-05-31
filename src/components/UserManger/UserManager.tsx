@@ -1,10 +1,17 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Action from '../Action'
+import { homeVariants } from '@/motionSettings'
 
 const UserManager: React.FC = () => {
   return (
-    <motion.div className="overflow-x-auto">
+    <motion.div className="overflow-x-auto"
+    variants={homeVariants}
+    initial="initial"
+    animate="enter"
+    exit="exit"
+    transition={{ duration: 0.5, type: 'linear' }}
+    >
       <table className="table-compact table w-full">
         <thead>
           <tr>

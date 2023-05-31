@@ -1,6 +1,8 @@
 import React from 'react'
 import { Mix } from '@ant-design/charts'
 import { DataView } from '@antv/data-set'
+import { motion } from 'framer-motion'
+import { homeVariants } from '@/motionSettings'
 
 const Charts: React.FC = () => {
   const data = [
@@ -229,6 +231,12 @@ const Charts: React.FC = () => {
       },
     ],
   }
-  return <Mix {...config} />
+  return <motion.div
+  variants={homeVariants}
+  initial="initial"
+  animate="enter"
+  exit="exit"
+  transition={{ duration: 0.5, type: 'linear' }}
+  ><Mix {...config} /></motion.div>
 }
 export default Charts

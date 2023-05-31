@@ -1,5 +1,7 @@
 import React from 'react'
 import { Column } from '@ant-design/charts'
+import { motion } from 'framer-motion'
+import { homeVariants } from '@/motionSettings'
 
 const ColumnCharts: React.FC = () => {
   const data = [
@@ -62,7 +64,13 @@ const ColumnCharts: React.FC = () => {
       },
     },
   }
-  return <Column {...config} />
+  return <motion.div
+  variants={homeVariants}
+  initial="initial"
+  animate="enter"
+  exit="exit"
+  transition={{ duration: 0.5, type: 'linear' }}
+  ><Column {...config} /></motion.div>
 }
 
 export default ColumnCharts

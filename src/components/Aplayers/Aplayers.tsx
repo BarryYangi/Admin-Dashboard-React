@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { APlayer, type AudioInfo } from 'aplayer-react'
 import 'aplayer-react/dist/index.css'
+import { motion } from 'framer-motion'
+import { homeVariants } from '@/motionSettings'
 
 const playlist1 = [
   {
@@ -48,7 +50,7 @@ const playlist2 = [
 function APlayers() {
   const [playlist] = useState<AudioInfo[]>(playlist1)
   return (
-    <div
+    <motion.div
       style={{
         width: '80vw',
         height: '100vh',
@@ -57,11 +59,16 @@ function APlayers() {
         alignItems: 'center',
         justifyContent: 'center',
       }}
+      variants={homeVariants}
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      transition={{ duration: 0.5, type: 'linear' }}
     >
       <div style={{ width: 600 }}>
         <APlayer audio={playlist} theme="auto" initialLoop="all" />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

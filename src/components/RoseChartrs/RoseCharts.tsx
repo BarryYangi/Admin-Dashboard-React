@@ -1,5 +1,7 @@
 import React from 'react'
 import { Rose } from '@ant-design/charts'
+import { motion } from 'framer-motion'
+import { homeVariants } from '@/motionSettings'
 
 function RoseCharts() {
   const data = [
@@ -82,7 +84,13 @@ function RoseCharts() {
       },
     ],
   }
-  return <Rose {...config} />
+  return <motion.div
+  variants={homeVariants}
+  initial="initial"
+  animate="enter"
+  exit="exit"
+  transition={{ duration: 0.5, type: 'linear' }}
+  ><Rose {...config} /></motion.div>
 }
 
 export default RoseCharts

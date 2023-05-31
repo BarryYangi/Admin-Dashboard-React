@@ -1,8 +1,16 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { homeVariants } from '@/motionSettings'
 
 const MenuManager: React.FC = () => {
   return (
-    <div className=''>
+    <motion.div className=''
+    variants={homeVariants}
+    initial="initial"
+    animate="enter"
+    exit="exit"
+    transition={{ duration: 0.5, type: 'linear' }}
+    >
       <h1 className='fixed left-1/2 top-4 m-0 p-0 text-center text-2xl'>用户管理</h1>
       {/* <button className="btn btn-success m-4">+ 添加</button> */}
       <label htmlFor="my-modal" className="btn btn-success m-4">+ 添加</label>
@@ -44,7 +52,7 @@ const MenuManager: React.FC = () => {
       <div className="mockup-window bg-base-300 absolute left-1/2 top-1/3 float-right h-1/2 w-1/3 border">
         <div className="bg-base-200 flex justify-center px-4 py-16">暂无数据</div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,6 +1,7 @@
 import JoLPlayer from 'jol-player'
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { homeVariants } from '@/motionSettings'
 
 function Jol() {
   const [videoSrc, setVideoSrc] = useState(
@@ -28,7 +29,13 @@ function Jol() {
   }
 
   return (
-    <>
+    <motion.div
+    variants={homeVariants}
+    initial="initial"
+    animate="enter"
+    exit="exit"
+    transition={{ duration: 0.5, type: 'linear' }}
+    >
       <div className="mockup-window bg-base-300 left-48 w-2/3 border">
         <div className="bg-base-200 flex justify-center py-0"><JoLPlayer
           option={{
@@ -52,7 +59,7 @@ function Jol() {
         <motion.button onClick={handleButtonReClick} className="btn btn-outline btn-primary ml-8" whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}>随机视频</motion.button>
       </div>
-    </>
+    </motion.div>
   )
 }
 
