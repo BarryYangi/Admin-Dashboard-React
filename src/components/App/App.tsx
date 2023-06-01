@@ -16,6 +16,7 @@ import RoseCharts from '../RoseChartrs'
 import APlayers from '../Aplayers'
 import Calendar from '../Calendar'
 import Jol from '../Jol'
+import ImageComponent from '../ImageComponent'
 import { homeVariants } from '@/motionSettings'
 
 const App: React.FC = () => {
@@ -65,6 +66,7 @@ const App: React.FC = () => {
             <Route path="aplayer" element={<APlayers />} />
             <Route path="calendar" element={<Calendar />} />
             <Route path="jol" element={<Jol />} />
+            <Route path="imageComponent" element={<ImageComponent imageUrl='https://img.barryi.me'/>} />
           </Route>
         </Routes>
       </AnimatePresence>

@@ -48,9 +48,8 @@ const Home: React.FC = () => {
                 <MenuItem component={<Link to="memosweb" />}>MemosWeb</MenuItem>
                 <MenuItem component={<Link to="digu" />}>嘀咕日记</MenuItem>
               </SubMenu>
-              <SubMenu label="弹幕墙" icon={<Wallpaper />}>
-                <MenuItem> Dark</MenuItem>
-                <MenuItem> Light</MenuItem>
+              <SubMenu label="壁纸馆" icon={<Wallpaper />}>
+                <MenuItem component={<Link to="imageComponent" />}>美图鉴赏</MenuItem>
               </SubMenu>
             </Menu>
           </Menu>
