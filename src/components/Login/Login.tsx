@@ -28,7 +28,7 @@ const Login: React.FC = () => {
   }
 
   const handleLogin = () => {
-    if (email === '1' && password === '1')
+    if (email === 'admin@yct.ee' && password === 'admin')
       navigate('/home')
 
     else
@@ -43,7 +43,7 @@ const Login: React.FC = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Login now!</h1>
             <p className="py-6">
-              一款使用 Vite + TypeScript + Tailwind CSS + Daisy UI + lucide-react + react-router 构建的后台管理前端页面，输入测试账号登录体验。
+              一款使用 Vite + TypeScript + Tailwind CSS + Daisy UI + lucide-react + react-router + framer-motion 构建的后台管理前端页面，输入测试账号登录体验。
             </p>
           </div>
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
