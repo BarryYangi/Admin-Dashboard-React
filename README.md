@@ -2,9 +2,10 @@
 
 Vite + TypeScript + Tailwind CSS + Daisy UI + lucide-react + framer-motion + ESlint 🤏
 
+## How to use
 ```sh
 ni  # npm i -g @antfu/ni
-nr dev
+nr dev # npm run dev
 ```
 
 ## Features
