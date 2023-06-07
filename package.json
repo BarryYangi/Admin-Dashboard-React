@@ -25,7 +25,8 @@
     "react-dom": "^18.2.0",
     "react-github-calendar": "^4.0.0",
     "react-pro-sidebar": "^1.0.0",
-    "react-router-dom": "6"
+    "react-router-dom": "6",
+    "react-visual-grid": "^0.9.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",

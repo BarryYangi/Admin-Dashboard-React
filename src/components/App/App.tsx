@@ -17,6 +17,7 @@ import APlayers from '../Aplayers'
 import Calendar from '../Calendar'
 import Jol from '../Jol'
 import ImageComponent from '../ImageComponent'
+import { Gallery } from '../Gallery'
 import { homeVariants } from '@/motionSettings'
 
 const App: React.FC = () => {
@@ -67,6 +68,7 @@ const App: React.FC = () => {
             <Route path="calendar" element={<Calendar />} />
             <Route path="jol" element={<Jol />} />
             <Route path="imageComponent" element={<ImageComponent imageUrl='https://img.barryi.me'/>} />
+            <Route path="gallery" element={<Gallery/>} />
           </Route>
         </Routes>
       </AnimatePresence>

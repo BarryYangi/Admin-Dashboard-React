@@ -45,6 +45,7 @@ const Home: React.FC = () => {
                 <MenuItem component={<Link to="calendar " />}>事件日历</MenuItem>
               </SubMenu>
               <SubMenu label="Memos" icon={<Edit />}>
+                <MenuItem component={<Link to="gallery" />}>MemosGallery</MenuItem>
                 <MenuItem component={<Link to="memosweb" />}>MemosWeb</MenuItem>
                 <MenuItem component={<Link to="digu" />}>嘀咕日记</MenuItem>
               </SubMenu>
