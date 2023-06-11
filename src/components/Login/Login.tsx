@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const Login: React.FC = () => {
   const navigate = useNavigate()
@@ -19,12 +20,22 @@ const Login: React.FC = () => {
   }, [showAlert])
 
   const alert = () => {
-    return (<div className="alert alert-error fixed top-2 w-1/3 shadow-lg">
+    return (<motion.div className="alert alert-error fixed top-2 w-1/3 shadow-lg"
+    layout="position"
+    initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{
+                  opacity: 0,
+                  y: 20,
+                  scale: 0.95,
+                  transition: { duration: 0.1 },
+                }}
+    >
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
         <span>登录失败，请检查您的用户名和密码是否正确。</span>
       </div>
-    </div>)
+    </motion.div>)
   }
 
   const handleLogin = () => {
@@ -37,7 +48,7 @@ const Login: React.FC = () => {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-8 p-6">
-      {showAlert && alert()}
+      <AnimatePresence>{showAlert && alert()}</AnimatePresence>
       <div className="hero bg-base-200 w-2/3 rounded-3xl">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
